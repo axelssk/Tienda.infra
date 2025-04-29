@@ -1,20 +1,27 @@
-
 .Tienda{
-    display: center;
-    height: 50px;
-    border: 1px solid red; 
+    background-color:bisque;
+    display:flex;
+    height: auto;
+    width: auto;
+    border-style:double; color:palevioletred;
     justify-content: center;
     align-items: center;
+    font-family:'Courier New', Courier, monospace
 }
 
 .boton{
 
-    display: block
+    background-color: bisque ;
+    display: flex ;
+    border-style: double; color:palevioletred
 
 }
 
 img{
-width: 55px;
+    border-style:groove;
+    border-color:black;
+    width: 55px;
+    display:flex;
 }
 .table, th,td {
     border: 1px solid rgb(255, 0, 0);
