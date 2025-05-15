@@ -1,3 +1,4 @@
+
 .Tienda{
     background-color:bisque;
     display:flex;
@@ -29,4 +30,14 @@ img{
     padding: 10px;
     margin-left: 50px;
     margin-top: 50px;
+}
+.producto{
+    border: 1px solid;
+    height: 28vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
