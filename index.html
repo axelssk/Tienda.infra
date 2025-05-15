@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -11,19 +11,48 @@
 </head>
 <body>
     <header>
-        <div class="Tienda" >
-            <h1>Tienda infra</h1></div>
-        <i class="fa-sharp fa-solid fa-bars"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
-        <i class="fa-brands fa-instagram" style="color: #fbbf98;"></i>
-        <i class="fa-brands fa-facebook" style="color: #51411f;"></i>
+        <nav class="navbar navbar-light" style="background-color: #e16b2774;">
+            <!-- Navbar content -->
+          </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">     
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html">TIENDA INFRA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  <a class="nav-link" href="/carrito.html">Features</a>
+                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
     </header>
     </table>
-    <img class="Remera" width="10
-    0" src="https://www.pngarts.com/files/3/Clothing-Download-Transparent-PNG-Image.png" alt="">
-    <br>
-    <img class="pantalon" width="150" src="https://th.bing.com/th/id/OIP.14dNjzQTiwXHlUYOpcF_8gHaHa?rs=1&pid=ImgDetMain">
-    <br>
+    <main>
+      <div class="producto">
+        <img class="Remera" width="100" src="/imagenes/campera.1.jpg" alt="">
+        <p><b>
+          campera marron L
+          $14.000
+        </b></p>
+        <button>agregar al carrito</button>     
+      </div>
+      
+      <div class="producto">
+        <img class="pantalon" width="150" src="/imagenes/campera.sp.jpg">
+        <p><b>
+          campera sp roja M
+          $13.000
+        </b></p>
+        <button>carrito de compra</button>
+      </div>
+    </main>
+    
     <script>src="/js/index.js"</script>
     
 </body>
