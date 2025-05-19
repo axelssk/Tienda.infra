@@ -6,18 +6,32 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    .custom-bg {
+      background-color: #3f3129;
+    }
+    .custom-text {
+      color: #3f3129;
+    }
+  </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>carrito</title>
+    <title>carrito | tienda Infra</title>
 </head>
-<body>
-    <header>
-        <h1><a href="index.html">TIENDA INFRA</a></h1>
-    </header>
+<body class="bg-light">
 
-<div class="container">
-        <h3>Tu Carrito</h3>
-        <table class="table table-striped">
-            <thead>
+   <header class="custom-bg py-3">
+    <div class="container text-center">
+      <h1 class="m-0">
+        <a href="index.html" class="text-light text-decoration-none">TIENDA INFRA</a>
+      </h1>
+    </div>
+  </header>
+
+<div class="container my-5">
+        <h3 class="mb-4 custom-text" >Tu Carrito</h3>
+        <div class="table-responsive">
+        <table class="table table-striped aling-middle text-center">
+            <thead class="table-light">
                 <tr>
                     <th>Producto</th>
                     <th>Cantidad</th>
@@ -26,33 +40,40 @@
                 </tr>
             </thead>
             <tbody id="carrito-body">
-                
+                <!-- filas que se van a agregar con carrito.js -->
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="3"><strong>Total</strong></td>
+                    <td colspan="3" class="text-end"><strong>Total</strong></td>
                     <td id="total">0</td>
                 </tr>
             </tfoot>
         </table>
+        </div>
     </div>
 
+    <div class="container mb-5">
     <form>
         <h3>Datos de contacto</h3>
-
-        <input placeholder="E-mail" type="email" id="Datos" name="Contacto" required>
+        <label for="Datos" class="form-label">Email</label>
+        <input class="form-control" placeholder="E-mail" type="email" id="Datos" name="Contacto" required>
 
         <input type="checkbox" id="CheckBox" name="ofertas">
         <label for="CheckBox">Quiero recibir ofertas por E-Mail</label>
 
-        <h3>Entrega</h3>
+        <h3 class="mb-3 custom-text">Entrega</h3>
 
-        <div><input placeholder="Codigo Postal" type="text"  id="codigoPostal" name="Entrega" required>
+        <div class="mb-3">
+            <label for="codigoPostal" class="form-label">Código Postal</label>
+            <input placeholder="ej: 9011" type="text"  id="codigoPostal" name="Entrega" class="form-control" required>
         </div>
-        <button type="submit">Continuar</button>
+
+        <button type="submit" class="btn btn-primary">Continuar</button>
         
     </form>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 <script src="js/carrito.js"></script>
 </body>
 </html>
